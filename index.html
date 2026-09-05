@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es-CL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartones del Sur | Cartón industrial y embalaje corrugado</title>
+    <meta name="description"
+        content="Fabricación y venta de cartón corrugado industrial: cajas, planchas y embalaje a medida para empresas." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <div class="brand">Cartones<span>del Sur</span></div>
+            <nav class="main-nav">
+                <a href="#productos">Productos</a>
+                <a href="#cotizador">Cotizador</a>
+                <a href="#nosotros">Por qué nosotros</a>
+                <a href="#contacto" class="nav-cta">Pedir cotización</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="wrap hero-inner">
+                <div class="hero-copy">
+                    <p class="hero-kicker">Embalaje corrugado industrial</p>
+                    <h1>
+                        Cartón resistente para mover tu producción, no tu presupuesto.
+                    </h1>
+                    <p class="hero-lead">
+                        Planchas y cajas de cartón corrugado simple, doble y triple pared.
+                        Fabricación a medida, despacho a fábrica y bodega en toda la
+                        región.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#cotizador" class="btn btn-primary">Cotizar ahora</a>
+                        <a href="#productos" class="btn btn-ghost">Ver tipos de cartón</a>
+                    </div>
+                    <dl class="hero-stats">
+                        <div>
+                            <dt>18</dt>
+                            <dd>años entregando a industria</dd>
+                        </div>
+                        <div>
+                            <dt>+40 t</dt>
+                            <dd>de cartón despachado al mes</dd>
+                        </div>
+                        <div>
+                            <dt>48 h</dt>
+                            <dd>plazo de entrega en pedidos estándar</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="crate-stack" aria-hidden="true">
+                    <div class="crate crate-a"><span class="flute"></span></div>
+                    <div class="crate crate-b"><span class="flute"></span></div>
+                    <div class="crate crate-c"><span class="flute"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="section">
+            <div class="wrap">
+                <h2>Tipos de cartón que fabricamos</h2>
+                <p class="section-lead">
+                    Cada línea de producto responde a una necesidad de carga distinta.
+                    Si no encuentras tu formato, lo cortamos a medida.
+                </p>
+
+                <div class="product-grid">
+                    <article class="product-card">
+                        <h3>Corrugado simple</h3>
+                        <p>
+                            Una cara lisa y un canal ondulado. Ideal para separadores,
+                            folder y embalajes livianos hasta 8 kg.
+                        </p>
+                        <ul class="spec-list">
+                            <li>Espesor 3 mm</li>
+                            <li>Resistencia media</li>
+                            <li>Costo más bajo</li>
+                        </ul>
+                    </article>
+
+                    <article class="product-card">
+                        <h3>Doble corrugado</h3>
+                        <p>
+                            Dos canales ondulados entre tres caras lisas. El estándar de la
+                            industria para cajas de exportación y e-commerce.
+                        </p>
+                        <ul class="spec-list">
+                            <li>Espesor 7 mm</li>
+                            <li>Carga hasta 25 kg</li>
+                            <li>Apilable en pallet</li>
+                        </ul>
+                    </article>
+
+                    <article class="product-card">
+                        <h3>Triple corrugado</h3>
+                        <p>
+                            Máxima resistencia para maquinaria, repuestos y carga pesada que
+                            requiere protección estructural.
+                        </p>
+                        <ul class="spec-list">
+                            <li>Espesor 12 mm</li>
+                            <li>Carga hasta 60 kg</li>
+                            <li>Resiste apilamiento alto</li>
+                        </ul>
+                    </article>
+
+                    <article class="product-card">
+                        <h3>Cajas a medida</h3>
+                        <p>
+                            Diseño de troquel según las dimensiones exactas de tu producto,
+                            con o sin impresión de marca.
+                        </p>
+                        <ul class="spec-list">
+                            <li>Medidas personalizadas</li>
+                            <li>Mínimo 200 unidades</li>
+                            <li>Muestra sin costo</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="cotizador" class="section section-alt">
+            <div class="wrap">
+                <h2>Cotizador rápido</h2>
+                <p class="section-lead">
+                    Ingresa las medidas de tu caja y la cantidad que necesitas. El
+                    cálculo es referencial; la cotización final se ajusta según diseño e
+                    impresión.
+                </p>
+
+                <div class="calculator" id="calculator">
+                    <div class="calc-form">
+                        <div class="field">
+                            <label for="tipoCarton">Tipo de cartón</label>
+                            <select id="tipoCarton">
+                                <option value="simple">Corrugado simple</option>
+                                <option value="doble" selected>Doble corrugado</option>
+                                <option value="triple">Triple corrugado</option>
+                            </select>
+                        </div>
+                        <div class="field-row">
+                            <div class="field">
+                                <label for="largo">Largo (cm)</label>
+                                <input type="number" id="largo" min="1" value="40" />
+                            </div>
+                            <div class="field">
+                                <label for="ancho">Ancho (cm)</label>
+                                <input type="number" id="ancho" min="1" value="30" />
+                            </div>
+                            <div class="field">
+                                <label for="alto">Alto (cm)</label>
+                                <input type="number" id="alto" min="1" value="25" />
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="cantidad">Cantidad de cajas</label>
+                            <input type="number" id="cantidad" min="1" value="500" />
+                        </div>
+                        <button type="button" class="btn btn-primary" id="btnCotizar">
+                            Calcular estimado
+                        </button>
+                    </div>
+
+                    <div class="calc-result" id="calcResult" aria-live="polite">
+                        <p class="result-placeholder">
+                            Completa los datos y presiona “Calcular estimado” para ver el
+                            precio referencial por caja y el total del pedido.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="section">
+            <div class="wrap nosotros-grid">
+                <div>
+                    <h2>Por qué las plantas confían en nosotros</h2>
+                    <p class="section-lead">
+                        Trabajamos directo con áreas de logística y operaciones, no con
+                        intermediarios.
+                    </p>
+                </div>
+                <div class="reason-list">
+                    <div class="reason">
+                        <h3>Stock permanente</h3>
+                        <p>
+                            Mantenemos planchas estándar en bodega para despacho el mismo
+                            día en pedidos sobre 100 unidades.
+                        </p>
+                    </div>
+                    <div class="reason">
+                        <h3>Control de calidad por lote</h3>
+                        <p>
+                            Cada lote se prueba en resistencia a la compresión (ECT) antes
+                            de salir a despacho.
+                        </p>
+                    </div>
+                    <div class="reason">
+                        <h3>Logística propia</h3>
+                        <p>
+                            Flota propia para entregas programadas a fábrica, sin depender
+                            de terceros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section section-alt">
+            <div class="wrap contacto-grid">
+                <div>
+                    <h2>Solicita una cotización formal</h2>
+                    <p class="section-lead">
+                        Déjanos tus datos y un ejecutivo de ventas industriales te
+                        contacta dentro de 24 horas hábiles.
+                    </p>
+                    <p class="contact-detail">
+                        Ventas industriales · Lunes a viernes, 8:30 a 18:00
+                    </p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="field">
+                        <label for="empresa">Empresa</label>
+                        <input type="text" id="empresa" name="empresa" required />
+                    </div>
+                    <div class="field">
+                        <label for="email">Correo de contacto</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="field">
+                        <label for="mensaje">Qué necesitas</label>
+                        <textarea id="mensaje" name="mensaje" rows="3"
+                            placeholder="Ej: 2000 cajas doble corrugado 40x30x25 cm, despacho mensual"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Enviar solicitud
+                    </button>
+                    <p class="form-note" id="formNote" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <span>© 2026 Cartones del Sur — Embalaje corrugado industrial</span>
+            <span id="last-load">Cargando última actualización…</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
