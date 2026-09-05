@@ -58,4 +58,4 @@ jobs:
             sudo cp -r /tmp/cloudflow-site/* /var/www/html/ &&
             sudo chown -R apache:apache /var/www/html &&
             sudo systemctl restart httpd
-          
+          '
