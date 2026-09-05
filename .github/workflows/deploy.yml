@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - main
+      - develop
 
   pull_request:
     branches:
       - main
+      - develop
 
 permissions:
   contents: read
@@ -56,4 +58,4 @@ jobs:
             sudo cp -r /tmp/cloudflow-site/* /var/www/html/ &&
             sudo chown -R apache:apache /var/www/html &&
             sudo systemctl restart httpd
-          '
+          
