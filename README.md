@@ -1,10 +1,18 @@
 # Ing-Devops-EV1
 
-Proyecto desarrollado para la Evaluación Parcial N°1 de la asignatura Ingeniería DevOps.
+Proyecto desarrollado para lagit  Evaluación N°1. de la asignatura Ingenieria DevOps.
 
-El proyecto consiste en una landing page desplegada en una instancia EC2 de AWS Learner Lab, utilizando GitHub Actions para automatizar la integración y el despliegue.
+El proyecto consiste en una landing page para **Cartones del Sur**, desplegada en una instancia EC2 de AWS Learner Lab mediante un workflow de GitHub Actions.
 
-## Tecnologías utilizadas
+## Funcionalidades
+
+- Presentacion de productos de carton corrugado.
+- Hero principal con mensaje comercial conciso y etiqueta superior subrayada.
+- Cotizador rapido para estimar valores segun medidas, tipo de carton y cantidad.
+- Formulario de contacto para solicitar una cotizacion formal.
+- Bloque informativo con horario de atencion.
+
+## Tecnologias utilizadas
 
 - HTML
 - CSS
@@ -15,30 +23,22 @@ El proyecto consiste en una landing page desplegada en una instancia EC2 de AWS 
 - AWS EC2
 - Apache HTTP Server
 
-## Estrategia de ramificación
+## Estrategia de ramificacion
 
-### Estrategia seleccionada: GitFlow
+Para este proyecto se utiliza **GitFlow** como estrategia de ramificacion.
 
-Para este proyecto se seleccionó **GitFlow** como estrategia de ramificación.
-
-La estructura utilizada es:
-
-- `main`: contiene la versión estable y desplegable del proyecto.
+- `main`: contiene la version estable y desplegable del proyecto.
 - `develop`: integra los cambios realizados durante el desarrollo.
 - `feature/<nombre>`: se utiliza para desarrollar nuevas funcionalidades.
-- `hotfix/<nombre>`: se utiliza para realizar correcciones urgentes sobre la versión estable.
+- `hotfix/<nombre>`: se utiliza para realizar correcciones urgentes sobre la version estable.
 
-El flujo general del proyecto es:
+## Flujo general
 
 ```text
 feature/*
-    ↓
-develop
-    ↓
-Pull Request
-    ↓
-main
-    ↓
-GitHub Actions
-    ↓
-AWS EC2
+  -> develop
+  -> Pull Request
+  -> main
+  -> GitHub Actions
+  -> AWS EC2
+```
